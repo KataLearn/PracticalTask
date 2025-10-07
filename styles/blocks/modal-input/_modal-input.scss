@@ -1,0 +1,23 @@
+.modal-input {
+     margin-bottom: 16px;
+    border: var(--border);
+    border-radius: 8px;
+    height: 48px;
+
+   
+
+    &:focus {
+
+      box-shadow: 0 0 0 3px var(--color-border);
+      outline: 0;
+    }
+
+    &:active {
+      border-color: var(--color-border);
+    }
+
+    &::placeholder {
+      padding: 12px 0px 12px 16px;
+      color: var(--color-input-text);
+    }
+}

@@ -1,0 +1,16 @@
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-light-modal);
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.overlay-open {
+  opacity: 1;
+  visibility: visible;
+}

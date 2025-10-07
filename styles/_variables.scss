@@ -1,0 +1,28 @@
+:root {
+  --color-pink: #ff3e79;
+  --color-body: #f8f8f8;
+  --color-light: #ffffff;
+  --color-light-modal: rgba(255, 255, 255, 0.95);
+  --color-bold: #1b1c21;
+  --color-grey: #7e7e82;
+  --color-border: #eaeaea;
+  --color-mint: #b8ffec;
+  --color-mint-light: #D9FFF5;
+  --color-input-text: #B5B6BC;
+
+  --border: 1px solid var(--color-border);
+  --border-radius: 6px;
+  --border-radius-icons: 50%;
+
+  --font-family-base: 'TT Lakes';
+
+  --container-width: 1120px;
+  --container-padding-x: 28px;
+
+  --section-padding-y: 25px;
+
+  --input-height: 48px;
+  --button-height: 32px;
+
+  --transition-duration: 0.2s;
+}

@@ -1,0 +1,25 @@
+@use '../../media' as *;
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    background-color: #DCDCDC;
+    font-family: 'TT Lakes';
+
+    @include tablet {
+      display: block;
+
+
+    }
+      
+
+}
+
+/*
+@media (max-width: 1112px) {
+    body {
+        display: block;
+    }
+}
+    */

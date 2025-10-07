@@ -1,0 +1,12 @@
+@use '../../mixins' as *;
+@use '../../media' as *;
+
+.open {
+    border-radius: var(--border-radius-icons);
+    @include reset-button;
+
+}
+
+.open:hover {
+    transform: scale(1.2);
+}

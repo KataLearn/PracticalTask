@@ -1,0 +1,45 @@
+@use '../../mixins' as *;
+@use '../../media' as *;
+
+.repair-types {
+    background-color: var(--color-body);
+
+    &__inner {
+        @include mobile-s {
+            display: none;
+        }
+    }
+
+    &__list--item {
+        background-color: var(--color-light);
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        //margin: 0 !important;
+
+
+    }
+
+    .list-types__item--text {
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .list-types__item--link {
+        align-self: flex-end;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .repair-types__list--item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 160px;
+
+    }
+}

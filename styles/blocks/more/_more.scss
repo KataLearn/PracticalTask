@@ -1,0 +1,31 @@
+ @use '../../mixins' as *;
+@use '../../media' as *;
+ 
+ .more {
+     padding-block: 34px;
+     padding-left: 63px;
+     position: relative;
+
+     @include mobile-s {
+         display: none;
+
+     }
+
+
+     &__text {
+         margin: 0;
+         color: var(--color-bold);
+         font-size: 16px;
+         line-height: 24px;
+         font-weight: 500;
+     }
+
+     &__icon {
+         position: absolute;
+         left: 31px;
+     }
+
+     .rotate {
+         transform: rotate(180deg);
+     }
+ }

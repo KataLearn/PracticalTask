@@ -1,0 +1,20 @@
+@use '../../mixins' as *;
+@use '../../media' as *;
+
+.read-more {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+
+  @include mobile-s {
+    padding-bottom: 16px;
+  }
+
+  &__icon.rotate {
+    transform: rotate(180deg);
+  }
+}

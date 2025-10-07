@@ -1,0 +1,53 @@
+
+@use 'normalize';
+@use 'fonts';
+@use 'mixins';
+@use 'media';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+@use 'blocks/body/body';
+@use 'blocks/overlay/overlay';
+@use 'blocks/close/close';
+@use 'blocks/open/open';
+
+@use 'blocks/aside/aside';
+@use 'blocks/aside/aside-burger';
+
+@use 'blocks/content-inner/content-inner';
+@use 'blocks/header/header';
+@use 'blocks/burger/burger';
+
+
+
+
+@use 'blocks/modal-input/modal-input';
+
+@use 'blocks/call-modal/call-modal';
+
+@use 'blocks/chat-modal/chat-modal';
+
+@use 'blocks/section-title/section-title';
+
+@use 'blocks/read-more/read-more';
+
+@use 'blocks/main/main';
+
+
+
+@use 'blocks/more/more';
+
+@use 'blocks/repair-list/repair-list';
+
+@use 'blocks/repair-brands/repair-brands';
+
+
+@use 'blocks/slider/swiper-slider';
+
+@use 'blocks/repair-types/repair-types';
+
+@use 'blocks/price/price';
+
+@use 'blocks/footer/footer';
+

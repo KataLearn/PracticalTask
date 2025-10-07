@@ -1,0 +1,19 @@
+
+@use '../../mixins' as *;
+@use '../../media' as *;
+
+.section-title__text {
+    background-color: var(--color-light);
+    padding: 16px 32px;
+    color: var(--color-grey);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, var(--color-body), var(--color-light));
+    border-top: 1px solid var(--color-mint-light);
+
+    @include mobile-s {
+            padding-inline: 16px;
+        }
+}

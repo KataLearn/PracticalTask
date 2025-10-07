@@ -1,0 +1,33 @@
+
+
+body {
+    font-family: var(--font-family-base);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-bold);
+    background-color: var(--color-body);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+    transition-duration: var(--transition-duration);
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+}
+
+button[type="button"] {
+    width: 40px;
+    height: 40px;
+}

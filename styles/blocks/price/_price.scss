@@ -1,0 +1,149 @@
+@use '../../mixins' as *;
+@use '../../media' as *;
+
+.price {
+    background-color: var(--color-body);
+
+    &__table {
+        width: 100%;
+        table-layout: auto;
+        padding-inline: 24px;
+
+
+
+        &--header th {
+            padding-top: 31px;
+            padding-bottom: 16px;
+            color: var(--color-grey);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: left;
+        }
+
+        &--body {
+            border-radius: 6px;
+
+            tr {
+                background-color: var(--color-light);
+                position: relative;
+
+                .row-btn::after {
+                    content: '';
+                    position: absolute;
+                    left: 24px;
+                    bottom: 0;
+                    right: 24px;
+                    height: 1px;
+                    background: var(--color-border);
+                }
+            }
+        }
+
+        @include mobile-s {
+            display: none;
+        }
+    }
+
+    td {
+        width: 20%;
+        font-size: 14px;
+        line-height: 18px;
+        padding-block: 16px;
+    }
+
+    td:nth-child(1) {
+        width: 45%;
+        padding-left: 24px;
+    }
+
+    td:nth-child(4) {
+        width: 10%;
+        text-align: right;
+        padding-right: 24px;
+    }
+
+    .price-slider {
+        display: none;
+        padding-top: 16px;
+    }
+
+    .replacement {
+        background-color: var(--color-light);
+        padding: 16px;
+        position: relative;
+
+        h3 {
+            margin: 0;
+            color: var(--color-grey);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 4px;
+        }
+
+        p {
+            line-height: 18px;
+            margin-bottom: 16px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+        .order {
+            position: absolute;
+            bottom: 16px;
+            right: 16px;
+        }
+    }
+
+
+    .order {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        @include reset-button;
+        background-color: var(--color-pink);
+        color: var(--color-light);
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 24px;
+        text-transform: uppercase;
+        border-radius: 16px;
+        padding: 4px 8px 4px 12px;
+
+        &::after {
+            content: url(../asset/goside.svg);
+            height: 24px;
+            width: 24px;
+        }
+
+    }
+
+    &__offer {
+        padding-top: 16px;
+
+        &--text {
+            padding-bottom: 16px;
+        }
+
+        &--link {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: var(--color-bold);
+            display: inline-block;
+            
+
+            span {
+position: relative;
+            }
+            span::after {
+                content: url(../asset/more.svg);
+                position: absolute;
+                right: -20px;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+@use '../../mixins' as *;
+@use '../../media' as *;
+
+.aside {
+  background-color: var(--color-light);
+  padding: 30px 30px 0 22px;
+  width: 305px;
+  flex-shrink: 1;
+
+  @include desktop {
+    display: none;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 37px;
+    width: 100%;
+
+    @include mobile-s {
+      padding-bottom: 20px;
+    }
+
+    &--btn {
+      margin-left: auto;
+    }
+
+    &--close {
+      display: none;
+      margin-top: 0;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 6px;
+
+      @include desktop {
+        display: flex;
+        position: static;
+      }
+    }
+  }
+
+  .aside-main {
+    margin-bottom: 213px;
+
+    @include mobile-s {
+      margin-bottom: 32px;
+    }
+
+    &__item {
+      padding-bottom: 28px;
+      @include mobile-s {
+        padding-bottom: 24px;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      &--link {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        position: relative;
+
+        &:hover,
+        &:active {
+          color: var(--color-grey);
+        }
+        &:hover::before,
+        &:active::before {
+          content: '';
+          height: 29px;
+          width: 4px;
+          background-color: var(--color-mint);
+          display: inline-block;
+          position: absolute;
+          left: -22px;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    &--btn {
+      display: flex;
+      column-gap: 16px;
+      justify-content: start;
+      margin-bottom: 17px;
+    }
+
+    .email {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 12px;
+    }
+
+    .tel {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 41px;
+    }
+
+    &--lang {
+      display: flex;
+      column-gap: 7px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+
+      .lang__ru {
+        color: var(--color-grey);
+      }
+    }
+  }
+}

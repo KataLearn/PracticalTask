@@ -1,0 +1,53 @@
+@use '../../mixins' as *;
+@use '../../media' as *;
+
+.repair-brands__slider,
+.repair-types__slider {
+    display: none !important;
+    padding-block: 24px;
+    max-width: 500px;
+}
+
+.swiper {
+    @include mobile-s {
+        display: block !important;
+    }
+
+    &-slide {
+        max-width: 240px;
+        margin-bottom: 50px;
+    }
+
+}
+
+.repair-types__slider .swiper-slide {
+    margin-top: 16px;
+}
+
+.price-slider .swiper-pagination {
+    bottom: 8px !important;
+}
+
+.repair-brands__slider .swiper-pagination{
+    top: 84px !important;
+}
+.repair-types__slider .swiper-pagination{
+    top: 192px !important;
+}
+
+
+.price-slider .swiper-pagination-bullet-active,
+.repair-types__slider .swiper-pagination-bullet-active,
+.repair-brands__slider .swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+    margin-top: 16px;
+
+}
+
+.price-slider .swiper-pagination-bullet,
+.repair-types__slider .swiper-pagination-bullet,
+.repair-brands__slider .swiper-pagination-bullet {
+    background-color: #DDDDDD;
+    height: 12px;
+    width: 12px;
+}

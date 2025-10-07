@@ -1,0 +1,41 @@
+@use '../../mixins' as *;
+@use '../../media' as *;
+
+.footer {
+
+    &__inner {
+        background-color: var(--color-body);
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 25px;
+
+        @include mobile-s {
+            flex-direction: column;
+            justify-content: center;
+            padding-bottom: 19px;
+        }
+
+        div {
+            width: 33.33%;
+
+            @include mobile-s {
+                width: 100%;
+                margin-bottom: 16px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 16px;
+                font-weight: 500;
+                color: var(--color-grey);
+            }
+        }
+    }
+
+    &__publicOffer{
+        text-align: right;
+    }
+}

@@ -1,0 +1,37 @@
+@use '../../mixins' as *;
+@use '../../media' as *;
+
+.repair-brands {
+  background-color: var(--color-body);
+
+  &__inner {
+    @include mobile-s {
+      padding-top: 16px;
+    }
+  }
+
+  &__brand {
+    @include mobile-s {
+      display: none;
+    }
+  }
+
+  .list-brand {
+    &__item {
+      background-color: var(--color-light);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      border-radius: 6px;
+
+      &--btn:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.repair-inner {
+  padding-top: 16px;
+}

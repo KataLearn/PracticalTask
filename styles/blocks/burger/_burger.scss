@@ -1,0 +1,31 @@
+@use '../../mixins' as *;
+
+.burger {
+    @include reset-button;
+    background-color: var(--color-pink);
+    height: 40px;
+    width: 40px;
+    border-radius: var(--border-radius-icons);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px 12px 12px 11px;
+
+    &__line {
+        background-color: var(--color-light);
+        height: 2px;
+        border-radius: 1px;
+        width: 12px;
+        transition-duration: var(--transition-duration);
+
+        &:first-child {
+            width: 18px;
+        }
+
+        &:last-child {
+            width: 14px;
+        }
+    }
+        
+}
